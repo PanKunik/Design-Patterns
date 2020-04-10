@@ -18,6 +18,9 @@ namespace DecoratorDesignPattern
         {
             Pizza basicPizza = new Mozarella(new TomatoSauce(new PlainPizza()));
 
+            Console.WriteLine("Ingredients: " + basicPizza.GetDescription());
+            Console.WriteLine("Cost: " + basicPizza.GetCost());
+
             Console.ReadKey();
         }
     }

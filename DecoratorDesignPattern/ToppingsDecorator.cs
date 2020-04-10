@@ -15,12 +15,12 @@ namespace DecoratorDesignPattern
             _temporaryPizza = newPizza;
         }
 
-        public double GetCost()
+        public virtual double GetCost()
         {
             return _temporaryPizza.GetCost();
         }
 
-        public string GetDescription()
+        public virtual string GetDescription()
         {
             return _temporaryPizza.GetDescription();
         }

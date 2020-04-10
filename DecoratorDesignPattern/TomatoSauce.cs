@@ -13,12 +13,12 @@ namespace DecoratorDesignPattern
             Console.WriteLine("Adding Tomato Sauce");
         }
 
-        public string GetDescription()
+        public override string GetDescription()
         {
             return _temporaryPizza.GetDescription() + ", Tomato Sauce";
         }
 
-        public double GetCost()
+        public override double GetCost()
         {
             return _temporaryPizza.GetCost() + .25d;
         }

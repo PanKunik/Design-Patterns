@@ -13,12 +13,12 @@ namespace DecoratorDesignPattern
             Console.WriteLine("Adding Mozzarella");
         }
 
-        public double GetCost()
+        public override double GetCost()
         {
             return _temporaryPizza.GetCost() + .5d;
         }
 
-        public string GetDescription()
+        public override string GetDescription()
         {
             return _temporaryPizza.GetDescription() + ", Mozzarella";
         }
