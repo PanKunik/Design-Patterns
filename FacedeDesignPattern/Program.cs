@@ -8,6 +8,11 @@ namespace FacedeDesignPattern
 {
     class Program
     {
+        /// <summary>
+        /// Facade connects subclasses in one complex class and distribute interface for using those subclasses
+        /// Facade takes care of creating objects and using their methods
+        /// </summary>
+        /// 
         static void Main(string[] args)
         {
             BankAccountFacade bankAccountFacade = new BankAccountFacade(12345678, 1234);
