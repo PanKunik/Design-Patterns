@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace AdapterDesignPattern
 {
+    /// <summary>
+    /// The VgaGraphicsCard can output ONLY the VgaStream class.
+    /// The DviMonitor can accept as input ONLY DviStream class.
+    /// There is needed an adapter (VgaGraphicsCardAdapter) to convert the VgaStream from VgaGraphicsCard to DviStream for DviMonitor.
+    /// 
+    /// Adapter takes as the argument the Adaptee class and allows Adaptee to communicate with Target class
+    /// (VgaGraphicsCardAdapter)     (VgaGraphicsCard)                                      (DviMonitor)
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
